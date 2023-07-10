@@ -13,7 +13,7 @@
     //Sending the link to background.js
     (async () => {
       const response = await chrome.runtime.sendMessage({ action: 'sendLinks', links: links, Title: Title }, (resposne) => {
-        console.log(response.received);
+        // console.log(response.received);
       });
 
     })();

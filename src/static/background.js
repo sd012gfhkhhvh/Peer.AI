@@ -12,7 +12,9 @@ const numberObj = {
     "fourth": 4,
     "fifth": 5
 }
-//-------------------------------------Soham's Workspace-----------------
+
+
+// ------------
 let linkTitle = []
 let linkUrl = []
 let webpageContent = ""
@@ -22,9 +24,9 @@ let j = 0;
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     console.log("ok1");
     if (message.action === 'sendLinks') {
-        for(i; i < message.Title.length; i++){
+        for (i; i < message.Title.length; i++) {
             linkTitle[i] = message.Title[i].replaceAll(/[- )(.,;]/g, '').toLowerCase();
-           
+
         }
         linkUrl = message.links[0]
         console.log('Links received:', message.links);
@@ -38,12 +40,12 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 // opne link from quary result page
 function openLink(payloadData) {
     console.log("called");
-    for(j; j < linkTitle.length; j++){
-       if(linkTitle[j].includes(payloadData) ) {
-              linkUrltoOpen = linkUrl[j]
-              chrome.tabs.update({ url: linkUrltoOpen });
-              break;
-       }
+    for (j; j < linkTitle.length; j++) {
+        if (linkTitle[j].includes(payloadData)) {
+            linkUrltoOpen = linkUrl[j]
+            chrome.tabs.update({ url: linkUrltoOpen });
+            break;
+        }
     }
     //let flag = linkTitle.includes(payloadData)
     // if (flag) {
@@ -66,49 +68,49 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
 //function to interact with the current page
 function getPageContent() {
-    let allWebPageData ;
-    
+    let allWebPageData;
+
     if (webpageContent.length > 100) {
-         webpageContent = webpageContent.slice(0, 100);
+        webpageContent = webpageContent.slice(0, 100);
         allWebPageData = ` Analyse this Innertext of a webpage and Give Summary within 60 words, the innertext is"${webpageContent}"`
     }
     makeAPIRequest(allWebPageData)
 
 }
 
-    async function makeAPIRequest(modeActivation) {
-        const apiKey = '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';
-        const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
-        console.log("ok111");
-        const prompt = modeActivation;
-        const maxTokens = 400;
-        const temperature = 5;
-    
-        const headers = {
-            'Content-Type': 'application/json',
-            'Authorization': `Bearer ${apiKey}`,
-        };
-    
-        const body = JSON.stringify({
-            prompt,
-            max_tokens: maxTokens,
-            temperature,
-        });
-    
-        const response = await fetch(apiUrl, {
-            method: 'POST',
-            headers,
-            body,
-        });
-    
-        const data = await response.json();
-        const promptData = data.choices[0].text
-        console.log(promptData);
-        chrome.runtime.sendMessage({ prompt: promptData });
-    
-        // Handle the response data as needed
-    }
-    
+async function makeAPIRequest(modeActivation) {
+    const apiKey = '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';
+    const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
+    console.log("ok111");
+    const prompt = modeActivation;
+    const maxTokens = 400;
+    const temperature = 5;
+
+    const headers = {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
+    };
+
+    const body = JSON.stringify({
+        prompt,
+        max_tokens: maxTokens,
+        temperature,
+    });
+
+    const response = await fetch(apiUrl, {
+        method: 'POST',
+        headers,
+        body,
+    });
+
+    const data = await response.json();
+    const promptData = data.choices[0].text
+    console.log(promptData);
+    chrome.runtime.sendMessage({ prompt: promptData });
+
+    // Handle the response data as needed
+}
+
 // Function to execute the content script in the active tab 
 function executeContentScript() {
     chrome.tabs.query({ active: true, currentWindow: true }, function (tabs) {
@@ -135,7 +137,8 @@ function executeContentScript() {
     });
 }
 
-//------------------------------------------------------------------------------
+//-----------------------------
+
 // get List Of All Activated Tabs
 
 function getListOfAllActivatedTabs() {
@@ -372,7 +375,7 @@ async function closeTabs(tabId) {
 
 // Function to make the API request
 async function makeAPIRequest(modeActivation) {
-    const apiKey = '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';
+    const apiKey = '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';
     const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
     console.log("ok111");
     const prompt = modeActivation;
@@ -389,17 +392,22 @@ async function makeAPIRequest(modeActivation) {
         max_tokens: maxTokens,
         temperature,
     });
+    try {
+        const response = await fetch(apiUrl, {
+            method: 'POST',
+            headers,
+            body,
+        });
+        const data = await response.json();
+        console.log(data);
+        const promptData = data.choices[0].text
+        console.log(promptData);
+        chrome.runtime.sendMessage({ prompt: promptData });
+    }
+    catch (e) {
+        console.log(e);
+    }
 
-    const response = await fetch(apiUrl, {
-        method: 'POST',
-        headers,
-        body,
-    });
-
-    const data = await response.json();
-    const promptData = data.choices[0].text
-    console.log(promptData);
-    chrome.runtime.sendMessage({ prompt: promptData });
 
     // Handle the response data as needed
 }
@@ -441,7 +449,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
         chrome.tabs.reload(tabId);
         // console.log(tabs);
     }
-    if ( message && message.includes("messageFromPopup")) {
+    if (message && message.includes("messageFromPopup")) {
         url = request.url
         tabId = request.tabId
         console.log(tabId);
@@ -457,9 +465,9 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
 
             }
             //refresh tab
-            else if(payloadData.includes("refresh")){
+            else if (payloadData.includes("refresh")) {
                 //if(request.action === "refresh"){
-                    chrome.tabs.reload(tabId);
+                chrome.tabs.reload(tabId);
                 //}
             }
             else if (payloadData.includes("switchto")) {
@@ -510,7 +518,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             else if (payloadData.includes("addtobookmark")) {
                 addCurrentTabToBookmarks();
             }
-            else if (payloadData.includes("remove")) {   // not working 
+            else if (payloadData.includes("removebookmark")) {   // not working 
                 console.log(url);
                 removeBookmark(url);
             }
@@ -526,7 +534,7 @@ chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
             }
             //content scrapting
             else if (payloadData.includes("readthepage")) {
-                // payloadData = payloadData.slice(5)
+                payloadData = payloadData.slice(5)
                 getPageContent();
             }
         }
