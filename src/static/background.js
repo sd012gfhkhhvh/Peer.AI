@@ -16,21 +16,22 @@ const numberObj = {
 
 // ------------
 let linkTitle = []
-let linkUrl = []
-let webpageContent = ""
-let i = 0;
-let j = 0;
+ let linkUrl = []
+// let webpageContent = ""
+ let i = 0;
+// let j = 0;
 //Getting the links from content.js
 chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
     console.log("ok1");
     if (message.action === 'sendLinks') {
-        for (i; i < message.Title.length; i++) {
+        for(i; i < message.Title.length; i++){
             linkTitle[i] = message.Title[i].replaceAll(/[- )(.,;]/g, '').toLowerCase();
-
+            
         }
+        //linkTitle = message.Title[0]
         linkUrl = message.links[0]
         console.log('Links received:', message.links);
-        console.log("Title:", linkTitle);
+        console.log("Title:", message.Title);
         sendResponse({ received: "ok" });
         // Handle the received links as needed
 
@@ -40,19 +41,20 @@ chrome.runtime.onMessage.addListener(function (message, sender, sendResponse) {
 // opne link from quary result page
 function openLink(payloadData) {
     console.log("called");
-    for (j; j < linkTitle.length; j++) {
-        if (linkTitle[j].includes(payloadData)) {
-            linkUrltoOpen = linkUrl[j]
-            chrome.tabs.update({ url: linkUrltoOpen });
-            break;
-        }
-    }
-    //let flag = linkTitle.includes(payloadData)
-    // if (flag) {
-    //     chrome.tabs.update({ url: linkUrltoOpen });
+    // for(j; j < linkTitle.length; j++){
+    //    if(linkTitle[j].includes(payloadData) ) {
+    //           linkUrltoOpen = linkUrl[j]
+    //           chrome.tabs.update({ url: linkUrltoOpen });
+    //           break;
+    //    }
     // }
+   
+    let flag = linkTitle[0].includes(payloadData)
+    if (flag) {
+        console.log("ok2");
+        chrome.tabs.update({ url: linkUrl });
+    }
 }
-
 
 //geting comntent of current page from content.js
 chrome.runtime.onMessage.addListener(function (request, sender, sendResponse) {
