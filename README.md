@@ -1,6 +1,6 @@
 # Peer.AI - Empower Your Browsing Experience with Voice Navigation, Q&A, and Compression!
 
-![Questionable Logo](./assets/icon.png)
+![Peer.AI Logo](./src/static/logo.png)
 
 Peer.AI is a game-changing Chrome extension that revolutionizes how you interact with the web. Effortlessly manage tabs and bookmarks using voice commands, freeing up your hands and making browsing tasks more efficient. With voice search, find information faster than ever before, eliminating the need for typing. Engage in interactive Q&A sessions with our intelligent ChatGPT, getting instant answers to your queries. Additionally, enjoy the convenience of requesting compressed and summarized web pages in a speak louder mode. VoiceWave transforms your Chrome experience, making it easier, safer, and more accessible.
 ## Features
