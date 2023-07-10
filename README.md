@@ -13,9 +13,9 @@ Peer.AI is a game-changing Chrome extension that revolutionizes how you interact
 
 - **Compressed Webpage Summaries:** Request concise summaries of webpages to quickly grasp key information without reading through lengthy content.
 
-- **"Speak Louder" Mode:** Amplify the voice output of Peer.AI to ensure clear and audible navigation, search results, summaries, and conversations.
+- **"Read The Page Mode:** Amplify the voice output of Peer.AI to ensure clear and audible navigation, search results, summaries, and conversations.
 
-- **Tab Management:** Efficiently organize and manage your open tabs, enabling a clutter-free browsing experience.
+- **Tab Management:** Efficiently organize and manage your open tabs, enabling tab switching, tab cloasing and restore tabs vis voice command.
 
 - **Bookmark Management:** Easily save, categorize, and access bookmarks to keep track of your favorite websites.
 
