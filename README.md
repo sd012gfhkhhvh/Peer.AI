@@ -30,6 +30,8 @@ By incorporating these features, Peer.AI aims to revolutionize your browsing exp
 ## Demo
 ![Questionable Logo](./assets/demo.gif)
 
+## Website
+[![Website](https://peer-ai-web.vercel.app/)](https://peer-ai-web.vercel.app/)
 
 ## Installation 
 1. Open the Chrome web browser.
@@ -56,7 +58,7 @@ By incorporating these features, Peer.AI aims to revolutionize your browsing exp
 
 6. Tab and Bookmark Management: Peer.AI streamlines your browsing experience by providing easy-to-use tools for managing tabs and bookmarks. Organize and access your browsing sessions efficiently, reducing clutter and improving productivity.
 
-7. Overall, Peer.AI revolutionizes your browsing experience by leveraging voice commands, intelligent search capabilities, interactive Q&A sessions, compressed webpage summaries, and user-friendly tab management. It aims to enhance convenience, efficiency, and accessibility, making browsing a seamless and engaging activity.
+ Overall, Peer.AI revolutionizes your browsing experience by leveraging voice commands, intelligent search capabilities, interactive Q&A sessions, compressed webpage summaries, and user-friendly tab management. It aims to enhance convenience, efficiency, and accessibility, making browsing a seamless and engaging activity.
 ## Contributions
 
 Contributions and feedback are welcome! If you encounter any issues or have suggestions for improvement, please [create an issue](https:///github.com/sd012gfhkhhvh/Peer.AI).
