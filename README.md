@@ -28,10 +28,10 @@ Peer.AI is a game-changing Chrome extension that revolutionizes how you interact
 By incorporating these features, Peer.AI aims to revolutionize your browsing experience by offering convenient voice-based navigation, efficient search and information retrieval, interactive conversations, and enhanced accessibility, all in one powerful Chrome extension.
 
 ## Demo
-![Questionable Logo](./assets/demo.gif)
+![Peer.AI Logo](./src/assets/demo.gif)
 
 ## Website
-[![Website](https://peer-ai-web.vercel.app/)](https://peer-ai-web.vercel.app/)
+https://peer-ai-web.vercel.app/
 
 ## Installation 
 1. Open the Chrome web browser.
