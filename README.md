@@ -21,19 +21,19 @@ Peer.AI is a game-changing Chrome extension that revolutionizes how you interact
 
 ## Usage
 
-1.Voice Navigation: With Peer.AI, you can navigate through your tabs and bookmarks using voice commands, eliminating the need for manual clicking and scrolling. It provides a hands-free and intuitive browsing experience.
+1. Voice Navigation: With Peer.AI, you can navigate through your tabs and bookmarks using voice commands, eliminating the need for manual clicking and scrolling. It provides a hands-free and intuitive browsing experience.
 
-2.Voice Search: Peer.AI's voice search functionality allows you to search the web effortlessly using your voice. Simply speak your query, and Peer.AI will fetch relevant search results, saving you time and effort.
+2. Voice Search: Peer.AI's voice search functionality allows you to search the web effortlessly using your voice. Simply speak your query, and Peer.AI will fetch relevant search results, saving you time and effort.
 
-3.Q&A Session with ChatGpt: Engage in interactive Q&A sessions with ChatGpt, an AI-powered chatbot. Ask questions, seek insights, and receive real-time answers, making information retrieval more conversational and engaging.
+3. Q&A Session with ChatGpt: Engage in interactive Q&A sessions with ChatGpt, an AI-powered chatbot. Ask questions, seek insights, and receive real-time answers, making information retrieval more conversational and engaging.
 
-4.Compressed Webpage Summaries: Peer.AI enables you to request concise summaries of webpages on-demand. Get the key points and highlights of an article or webpage without the need to read through lengthy content, providing a quick overview of the information.
+4. Compressed Webpage Summaries: Peer.AI enables you to request concise summaries of webpages on-demand. Get the key points and highlights of an article or webpage without the need to read through lengthy content, providing a quick overview of the information.
 
-5."Speak Louder" Mode: Peer.AI offers a "speak louder" mode, ensuring clear and audible voice output even in noisy environments. This feature enhances accessibility and allows you to comfortably interact with the extension in various settings.
+5. "Speak Louder" Mode: Peer.AI offers a "speak louder" mode, ensuring clear and audible voice output even in noisy environments. This feature enhances accessibility and allows you to comfortably interact with the extension in various settings.
 
-6.Tab and Bookmark Management: Peer.AI streamlines your browsing experience by providing easy-to-use tools for managing tabs and bookmarks. Organize and access your browsing sessions efficiently, reducing clutter and improving productivity.
+6. Tab and Bookmark Management: Peer.AI streamlines your browsing experience by providing easy-to-use tools for managing tabs and bookmarks. Organize and access your browsing sessions efficiently, reducing clutter and improving productivity.
 
-7.Overall, Peer.AI revolutionizes your browsing experience by leveraging voice commands, intelligent search capabilities, interactive Q&A sessions, compressed webpage summaries, and user-friendly tab management. It aims to enhance convenience, efficiency, and accessibility, making browsing a seamless and engaging activity.
+7. Overall, Peer.AI revolutionizes your browsing experience by leveraging voice commands, intelligent search capabilities, interactive Q&A sessions, compressed webpage summaries, and user-friendly tab management. It aims to enhance convenience, efficiency, and accessibility, making browsing a seamless and engaging activity.
 ## Contributions
 
 Contributions and feedback are welcome! If you encounter any issues or have suggestions for improvement, please [create an issue](https:///github.com/sd012gfhkhhvh/Peer.AI).
