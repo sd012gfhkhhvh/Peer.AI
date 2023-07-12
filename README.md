@@ -4,7 +4,7 @@
 <img src="./src/static/logo.png" />
 </div>
 Peer.AI is a game-changing Chrome extension that revolutionizes how you interact with the web. Effortlessly manage tabs and bookmarks using voice commands, freeing up your hands and making browsing tasks more efficient. With voice search, find information faster than ever before, eliminating the need for typing. Engage in interactive Q&A sessions with our intelligent ChatGPT, getting instant answers to your queries. Additionally, enjoy the convenience of requesting compressed and summarized web pages in a speak louder mode. VoiceWave transforms your Chrome experience, making it easier, safer, and more accessible.
-## Features
+## `Features`
 
 - **Voice Navigation:**: Seamlessly navigate through tabs and bookmarks using intuitive voice commands.
 
@@ -28,15 +28,15 @@ Peer.AI is a game-changing Chrome extension that revolutionizes how you interact
 
 By incorporating these features, Peer.AI aims to revolutionize your browsing experience by offering convenient voice-based navigation, efficient search and information retrieval, interactive conversations, and enhanced accessibility, all in one powerful Chrome extension.
 
-## Demo
+## `Demo`
 <div align="center">
 <img src="./src/assets/demo.gif" />
 </div>
 
-## Website
+## `Website`
 https://peer-ai-web.vercel.app/
 
-## Installation 
+## `Installation` 
 1. Open the Chrome web browser.
 2. clone the repo to your local system
 3. run the command in the terminal of your local system to clone the repo - git clone git@github.com:sd012gfhkhhvh/Peer.AI.git
@@ -47,9 +47,9 @@ https://peer-ai-web.vercel.app/
 8. Pin it
 9. Good to go.
 
-## User Manual
+## `User Manual`
 https://docs.google.com/document/d/1G9RbwXlzVBfP9EhXfa8g86L4aA3Xhe8vvdIymB6dg74/edit?usp=sharing
-## Usage
+## `Usage`
 
 1. Voice Navigation: With Peer.AI, you can navigate through your tabs and bookmarks using voice commands, eliminating the need for manual clicking and scrolling. It provides a hands-free and intuitive browsing experience.
 
@@ -64,15 +64,15 @@ https://docs.google.com/document/d/1G9RbwXlzVBfP9EhXfa8g86L4aA3Xhe8vvdIymB6dg74/
 6. Tab and Bookmark Management: Peer.AI streamlines your browsing experience by providing easy-to-use tools for managing tabs and bookmarks. Organize and access your browsing sessions efficiently, reducing clutter and improving productivity.
 
  Overall, Peer.AI revolutionizes your browsing experience by leveraging voice commands, intelligent search capabilities, interactive Q&A sessions, compressed webpage summaries, and user-friendly tab management. It aims to enhance convenience, efficiency, and accessibility, making browsing a seamless and engaging activity.
-## Contributions
+## `Contributions`
 
 Contributions and feedback are welcome! If you encounter any issues or have suggestions for improvement, please [create an issue](https:///github.com/sd012gfhkhhvh/Peer.AI).
 
-## License
+## `License`
 
 This project is licensed under the [MIT License](LICENSE).
 
-## Contact
+### `Contact`
 <div>
 <a href="Ssohamdas.nest@gmail.com"><img height = "100" width="100" src="https://avatars.githubusercontent.com/u/91667720?v=4" /> </a>
  <a href="sayanmajumder0002@gmail.com"><img height = "100" width="100" src="https://avatars.githubusercontent.com/u/95490367?v=4" /> </a>
