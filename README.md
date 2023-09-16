@@ -75,5 +75,4 @@ This project is licensed under the [MIT License](LICENSE).
 ### `Contact`
 <div>
 <a href="Ssohamdas.nest@gmail.com"><img height = "100" width="100" src="https://avatars.githubusercontent.com/u/91667720?v=4" /> </a>
- <a href="sayanmajumder0002@gmail.com"><img height = "100" width="100" src="https://avatars.githubusercontent.com/u/95490367?v=4" /> </a>
 </div>
