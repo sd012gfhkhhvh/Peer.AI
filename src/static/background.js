@@ -81,7 +81,7 @@ function getPageContent() {
 }
 
 async function makeAPIRequest(modeActivation) {
-    const apiKey = 'sk-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';
+    const apiKey = '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';
     const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
     console.log("ok111");
     const prompt = modeActivation;
@@ -377,7 +377,7 @@ async function closeTabs(tabId) {
 
 // Function to make the API request
 async function makeAPIRequest(modeActivation) {
-    const apiKey = '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';
+    const apiKey = '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';
     const apiUrl = 'https://api.openai.com/v1/engines/text-davinci-003/completions';
     console.log("ok111");
     const prompt = modeActivation;
