@@ -1,6 +1,6 @@
 {
     "manifest_version": 3,
-    "name": "Chrome Automator",
+    "name": "Peer.AI",
     "description": "Extension That Automates the accesibility of chrome to disable peoples",
     "version": "1.0.0",
     "host_permissions": [
